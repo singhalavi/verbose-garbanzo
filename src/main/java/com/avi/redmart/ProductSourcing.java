@@ -2,20 +2,20 @@ package com.avi.redmart;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+import com.avi.redmart.Product;
 
 public class ProductSourcing {
 
 	private int weights[][];
 	private ArrayList<Integer> indices;
 	private static  Long  toteLength = 30l, toteWidth = 35l, toteHeight = 45l;
-	private List<Product> getMaxValueProducts(List<Product> products, int maxVw){
+	public List<Product> getMaxValueProducts(List<Product> products, int maxVw){
 		
 		weights = new int[products.size()+1][maxVw+1];
 		for(int i=0; i < maxVw+1; i++){

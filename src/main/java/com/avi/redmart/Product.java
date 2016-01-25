@@ -10,6 +10,19 @@ public class Product {
 	
 	private Integer vw = null;
 	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Product(Long pid, Long length, Long width, Long height, Long weight, int price) {
+		super();
+		this.pid = pid;
+		this.length = length;
+		this.width = width;
+		this.height = height;
+		this.weight = weight;
+		this.price = price;
+	}
 	public Long getPid() {
 		return pid;
 	}
